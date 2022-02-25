@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random friend generator</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body{
+            font-family:monospace;
+        }
+        h1{
+            text-align: center;
+        }
+        .image img{
+            margin-bottom: 2rem; 
+            border-radius: 50%;
+        }
+
+        .fa-solid{
+            color: lightseagreen;
+            margin-right: 25px;
+        }
+        .fa-solid:hover{
+            color: black;
+            
+        }
+        #center{
+            width: 50%;
+            margin: 10px auto;
+            border: 2px solid black;
+            text-align: center;
+            background-color: lightgray;
+            padding: 30px;
+        }
+
+        footer p{
+            margin: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 680px) {
+        #center {
+            width: 80%;
+            margin: 10px auto;
+            background-color: lightgreen;
+        }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Random Friend Generator</h1>
+    <section id="center">
+        <section id="user-container">
+            <div class="image">
+                <img id="image" src="" alt="">
+            </div>
+            <div id="name"></div>
+            <div id="email"></div>
+            <div id="age"></div>
+            <div id="address"></div>
+            <div id="number"></div>
+            <div id="password"></div>
+            
+        </section>
+        <section>
+            <div>
+                <i id="home-icon" class="fa-solid fa-3x fa-face-smile"></i>
+                <i id="email-icon" class="fa-solid fa-3x fa-envelope"></i>
+                <i id="age-icon" class="fa-solid fa-3x fa-calendar-days"></i>
+                <i id="address-icon" class="fa-solid fa-3x fa-location-dot"></i>
+                <i id="number-icon" class="fa-solid fa-3x fa-phone"></i>
+                <i id="lock-icon" class="fa-solid fa-3x fa-lock"></i>
+                <i id="refresh" class="fa-solid fa-3x fa-arrows-rotate"></i>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>Developed by Faysal Hasan &copy; 2022</p>
+    </footer>
+    
+
+
+    <script src="js/random.js"></script>
+    
+</body>
+</html>
